@@ -9,8 +9,7 @@ The centerpiece is a single HTML form that captures supplier information, 39 con
 - `supplier-cybersecurity-assessment.html` – Standalone browser form that suppliers complete, save locally, and return. All answers, progress indicators, and scores persist directly within the saved HTML.
 - `how_to.md` – Internal playbook for the company running the program: covers preparation, distribution, intake, and retention of supplier submissions.
 - `supplier_instructions-english.md` / `...-turkish.md` / `...-italian.md` / `...-spanish.md` – Ready-to-send guidance for suppliers explaining how to open, complete, save, and submit the assessment in each language.
-- `README_DE.md`, `README_ES.md`, `README_FR.md` – High-level product overviews in German, Spanish, and French for teams that need localized summaries.
-- `USER_GUIDE.md` – Legacy quick reference for suppliers in English (kept for continuity; superseded by the targeted instruction files above).
+
 
 ## Usage Overview
 
