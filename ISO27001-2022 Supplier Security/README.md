@@ -1,6 +1,8 @@
 # ISO 27001:2022 Supplier Cybersecurity Self-Assessment
 
-This repository provides an offline self-assessment package that procurement and security teams can send to suppliers to gauge their alignment to ISO/IEC 27001:2022 controls. The centerpiece is a single HTML form that captures supplier information, 39 control maturity responses, and an automatically calculated score without requiring any server-side components.
+This repository provides an offline self-assessment package that procurement and security teams can send to suppliers to gauge, score their alignment to the core ISO/IEC 27001:2022 controls. 
+
+The centerpiece is a single HTML form that captures supplier information, 39 control maturity responses, and an automatically calculated score without requiring any server-side components.  The 39 controls are a selected subset of the 93 within the standard to balance effort and coverage.
 
 ## Contents
 
@@ -17,4 +19,4 @@ This repository provides an offline self-assessment package that procurement and
 3. Supplier emails the newly downloaded `security_assessment-<supplier>-<YYYY-MM-DD>.html` file back to the requesting team.
 4. Receiving team archives the returned HTML, reviews the embedded score and responses, and follows up on any gaps.
 
-For versioning, consult the metadata at the bottom of each document. Update the instructions and questionnaire together whenever your control expectations change.*** End Patch
+For versioning, consult the metadata at the bottom of each document. Update the instructions and questionnaire together whenever your control expectations change.***
