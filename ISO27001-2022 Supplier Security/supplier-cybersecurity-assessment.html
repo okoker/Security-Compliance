@@ -113,7 +113,7 @@
         }
 
         .question {
-            margin-bottom: 25px;
+            margin-bottom: 15px;
             padding: 15px;
             background: #f8f9fa;
             border-radius: 5px;
@@ -122,7 +122,7 @@
 
         .question-text {
             font-weight: 600;
-            margin-bottom: 12px;
+            margin-bottom: 10px;
             color: #2d3748;
             font-size: 15px;
         }
@@ -225,6 +225,32 @@
             height: 100%;
             width: 0%;
             transition: width 0.3s ease;
+        }
+
+        .score-display {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border: 2px solid #e2e8f0;
+        }
+
+        .score-display h3 {
+            color: #2c5282;
+            margin-bottom: 10px;
+        }
+
+        .score-value {
+            font-size: 32px;
+            font-weight: bold;
+            color: #2c5282;
+            margin: 10px 0;
+        }
+
+        .score-level {
+            font-size: 18px;
+            color: #666;
+            margin-top: 5px;
         }
 
         @media print {
@@ -333,7 +359,7 @@
                 
                 <div class="question">
                     <div class="question-text">1.1 Do you have a documented information security policy approved by management?</div>
-                    <select class="maturity-select" name="q1" required>
+                    <select class="maturity-select" name="q1">
                         <option value="">-- Select Maturity Level --</option>
                         <option value="0">Not Implemented</option>
                         <option value="1">Partially Implemented</option>
@@ -345,7 +371,7 @@
 
                 <div class="question">
                     <div class="question-text">1.2 Are information security roles and responsibilities clearly defined and assigned?</div>
-                    <select class="maturity-select" name="q2" required>
+                    <select class="maturity-select" name="q2">
                         <option value="">-- Select Maturity Level --</option>
                         <option value="0">Not Implemented</option>
                         <option value="1">Partially Implemented</option>
@@ -357,7 +383,7 @@
 
                 <div class="question">
                     <div class="question-text">1.3 Do you maintain an inventory of information assets (hardware, software, data)?</div>
-                    <select class="maturity-select" name="q3" required>
+                    <select class="maturity-select" name="q3">
                         <option value="">-- Select Maturity Level --</option>
                         <option value="0">Not Implemented</option>
                         <option value="1">Partially Implemented</option>
@@ -369,7 +395,7 @@
 
                 <div class="question">
                     <div class="question-text">1.4 Do you have procedures for information classification and handling?</div>
-                    <select class="maturity-select" name="q4" required>
+                    <select class="maturity-select" name="q4">
                         <option value="">-- Select Maturity Level --</option>
                         <option value="0">Not Implemented</option>
                         <option value="1">Partially Implemented</option>
@@ -386,7 +412,7 @@
                 
                 <div class="question">
                     <div class="question-text">2.1 Do you conduct regular information security risk assessments?</div>
-                    <select class="maturity-select" name="q5" required>
+                    <select class="maturity-select" name="q5">
                         <option value="">-- Select Maturity Level --</option>
                         <option value="0">Not Implemented</option>
                         <option value="1">Partially Implemented</option>
@@ -398,7 +424,7 @@
 
                 <div class="question">
                     <div class="question-text">2.2 Do you have a documented risk treatment plan with assigned owners?</div>
-                    <select class="maturity-select" name="q6" required>
+                    <select class="maturity-select" name="q6">
                         <option value="">-- Select Maturity Level --</option>
                         <option value="0">Not Implemented</option>
                         <option value="1">Partially Implemented</option>
@@ -410,7 +436,7 @@
 
                 <div class="question">
                     <div class="question-text">2.3 Do you monitor and evaluate security threats and vulnerabilities relevant to your business?</div>
-                    <select class="maturity-select" name="q7" required>
+                    <select class="maturity-select" name="q7">
                         <option value="">-- Select Maturity Level --</option>
                         <option value="0">Not Implemented</option>
                         <option value="1">Partially Implemented</option>
@@ -427,7 +453,7 @@
                 
                 <div class="question">
                     <div class="question-text">3.1 Do you conduct background screening for employees with access to sensitive information?</div>
-                    <select class="maturity-select" name="q8" required>
+                    <select class="maturity-select" name="q8">
                         <option value="">-- Select Maturity Level --</option>
                         <option value="0">Not Implemented</option>
                         <option value="1">Partially Implemented</option>
@@ -439,7 +465,7 @@
 
                 <div class="question">
                     <div class="question-text">3.2 Do employees receive regular information security awareness training?</div>
-                    <select class="maturity-select" name="q9" required>
+                    <select class="maturity-select" name="q9">
                         <option value="">-- Select Maturity Level --</option>
                         <option value="0">Not Implemented</option>
                         <option value="1">Partially Implemented</option>
@@ -451,7 +477,7 @@
 
                 <div class="question">
                     <div class="question-text">3.3 Do employees sign confidentiality or non-disclosure agreements?</div>
-                    <select class="maturity-select" name="q10" required>
+                    <select class="maturity-select" name="q10">
                         <option value="">-- Select Maturity Level --</option>
                         <option value="0">Not Implemented</option>
                         <option value="1">Partially Implemented</option>
@@ -463,7 +489,7 @@
 
                 <div class="question">
                     <div class="question-text">3.4 Are there procedures for employee termination including access revocation?</div>
-                    <select class="maturity-select" name="q11" required>
+                    <select class="maturity-select" name="q11">
                         <option value="">-- Select Maturity Level --</option>
                         <option value="0">Not Implemented</option>
                         <option value="1">Partially Implemented</option>
@@ -480,7 +506,7 @@
                 
                 <div class="question">
                     <div class="question-text">4.1 Do you have documented access control policies based on business needs?</div>
-                    <select class="maturity-select" name="q12" required>
+                    <select class="maturity-select" name="q12">
                         <option value="">-- Select Maturity Level --</option>
                         <option value="0">Not Implemented</option>
                         <option value="1">Partially Implemented</option>
@@ -492,7 +518,7 @@
 
                 <div class="question">
                     <div class="question-text">4.2 Are user access rights reviewed regularly and removed when no longer needed?</div>
-                    <select class="maturity-select" name="q13" required>
+                    <select class="maturity-select" name="q13">
                         <option value="">-- Select Maturity Level --</option>
                         <option value="0">Not Implemented</option>
                         <option value="1">Partially Implemented</option>
@@ -504,7 +530,7 @@
 
                 <div class="question">
                     <div class="question-text">4.3 Do you enforce strong password policies or multi-factor authentication?</div>
-                    <select class="maturity-select" name="q14" required>
+                    <select class="maturity-select" name="q14">
                         <option value="">-- Select Maturity Level --</option>
                         <option value="0">Not Implemented</option>
                         <option value="1">Partially Implemented</option>
@@ -516,7 +542,7 @@
 
                 <div class="question">
                     <div class="question-text">4.4 Is privileged access (administrative rights) restricted and monitored?</div>
-                    <select class="maturity-select" name="q15" required>
+                    <select class="maturity-select" name="q15">
                         <option value="">-- Select Maturity Level --</option>
                         <option value="0">Not Implemented</option>
                         <option value="1">Partially Implemented</option>
@@ -533,7 +559,7 @@
                 
                 <div class="question">
                     <div class="question-text">5.1 Are physical security perimeters defined to protect sensitive areas?</div>
-                    <select class="maturity-select" name="q16" required>
+                    <select class="maturity-select" name="q16">
                         <option value="">-- Select Maturity Level --</option>
                         <option value="0">Not Implemented</option>
                         <option value="1">Partially Implemented</option>
@@ -545,7 +571,7 @@
 
                 <div class="question">
                     <div class="question-text">5.2 Do you have access controls for physical entry to offices and facilities?</div>
-                    <select class="maturity-select" name="q17" required>
+                    <select class="maturity-select" name="q17">
                         <option value="">-- Select Maturity Level --</option>
                         <option value="0">Not Implemented</option>
                         <option value="1">Partially Implemented</option>
@@ -557,7 +583,7 @@
 
                 <div class="question">
                     <div class="question-text">5.3 Are clear desk and clear screen policies enforced?</div>
-                    <select class="maturity-select" name="q18" required>
+                    <select class="maturity-select" name="q18">
                         <option value="">-- Select Maturity Level --</option>
                         <option value="0">Not Implemented</option>
                         <option value="1">Partially Implemented</option>
@@ -569,7 +595,7 @@
 
                 <div class="question">
                     <div class="question-text">5.4 Do you have secure disposal procedures for equipment and media containing sensitive data?</div>
-                    <select class="maturity-select" name="q19" required>
+                    <select class="maturity-select" name="q19">
                         <option value="">-- Select Maturity Level --</option>
                         <option value="0">Not Implemented</option>
                         <option value="1">Partially Implemented</option>
@@ -586,7 +612,7 @@
                 
                 <div class="question">
                     <div class="question-text">6.1 Do you use anti-malware protection on all systems and keep it updated?</div>
-                    <select class="maturity-select" name="q20" required>
+                    <select class="maturity-select" name="q20">
                         <option value="">-- Select Maturity Level --</option>
                         <option value="0">Not Implemented</option>
                         <option value="1">Partially Implemented</option>
@@ -598,7 +624,7 @@
 
                 <div class="question">
                     <div class="question-text">6.2 Are software patches and security updates applied regularly?</div>
-                    <select class="maturity-select" name="q21" required>
+                    <select class="maturity-select" name="q21">
                         <option value="">-- Select Maturity Level --</option>
                         <option value="0">Not Implemented</option>
                         <option value="1">Partially Implemented</option>
@@ -610,7 +636,7 @@
 
                 <div class="question">
                     <div class="question-text">6.3 Do you use encryption to protect sensitive data in transit and at rest?</div>
-                    <select class="maturity-select" name="q22" required>
+                    <select class="maturity-select" name="q22">
                         <option value="">-- Select Maturity Level --</option>
                         <option value="0">Not Implemented</option>
                         <option value="1">Partially Implemented</option>
@@ -622,7 +648,7 @@
 
                 <div class="question">
                     <div class="question-text">6.4 Are network security controls implemented (firewalls, network segmentation)?</div>
-                    <select class="maturity-select" name="q23" required>
+                    <select class="maturity-select" name="q23">
                         <option value="">-- Select Maturity Level --</option>
                         <option value="0">Not Implemented</option>
                         <option value="1">Partially Implemented</option>
@@ -634,7 +660,7 @@
 
                 <div class="question">
                     <div class="question-text">6.5 Do you maintain system logs and monitor them for security events?</div>
-                    <select class="maturity-select" name="q24" required>
+                    <select class="maturity-select" name="q24">
                         <option value="">-- Select Maturity Level --</option>
                         <option value="0">Not Implemented</option>
                         <option value="1">Partially Implemented</option>
@@ -651,7 +677,7 @@
                 
                 <div class="question">
                     <div class="question-text">7.1 Do you perform regular backups of critical data and systems?</div>
-                    <select class="maturity-select" name="q25" required>
+                    <select class="maturity-select" name="q25">
                         <option value="">-- Select Maturity Level --</option>
                         <option value="0">Not Implemented</option>
                         <option value="1">Partially Implemented</option>
@@ -663,7 +689,7 @@
 
                 <div class="question">
                     <div class="question-text">7.2 Are backup restoration procedures tested regularly?</div>
-                    <select class="maturity-select" name="q26" required>
+                    <select class="maturity-select" name="q26">
                         <option value="">-- Select Maturity Level --</option>
                         <option value="0">Not Implemented</option>
                         <option value="1">Partially Implemented</option>
@@ -675,7 +701,7 @@
 
                 <div class="question">
                     <div class="question-text">7.3 Do you have a documented business continuity plan for information security?</div>
-                    <select class="maturity-select" name="q27" required>
+                    <select class="maturity-select" name="q27">
                         <option value="">-- Select Maturity Level --</option>
                         <option value="0">Not Implemented</option>
                         <option value="1">Partially Implemented</option>
@@ -687,7 +713,7 @@
 
                 <div class="question">
                     <div class="question-text">7.4 Is the business continuity plan tested at regular intervals?</div>
-                    <select class="maturity-select" name="q28" required>
+                    <select class="maturity-select" name="q28">
                         <option value="">-- Select Maturity Level --</option>
                         <option value="0">Not Implemented</option>
                         <option value="1">Partially Implemented</option>
@@ -704,7 +730,7 @@
                 
                 <div class="question">
                     <div class="question-text">8.1 Do you have documented procedures for reporting security incidents?</div>
-                    <select class="maturity-select" name="q29" required>
+                    <select class="maturity-select" name="q29">
                         <option value="">-- Select Maturity Level --</option>
                         <option value="0">Not Implemented</option>
                         <option value="1">Partially Implemented</option>
@@ -716,7 +742,7 @@
 
                 <div class="question">
                     <div class="question-text">8.2 Do you have an incident response plan with defined roles and procedures?</div>
-                    <select class="maturity-select" name="q30" required>
+                    <select class="maturity-select" name="q30">
                         <option value="">-- Select Maturity Level --</option>
                         <option value="0">Not Implemented</option>
                         <option value="1">Partially Implemented</option>
@@ -728,7 +754,7 @@
 
                 <div class="question">
                     <div class="question-text">8.3 Do you maintain records of security incidents and lessons learned?</div>
-                    <select class="maturity-select" name="q31" required>
+                    <select class="maturity-select" name="q31">
                         <option value="">-- Select Maturity Level --</option>
                         <option value="0">Not Implemented</option>
                         <option value="1">Partially Implemented</option>
@@ -740,7 +766,7 @@
 
                 <div class="question">
                     <div class="question-text">8.4 Do you have procedures for evidence collection and preservation for incidents?</div>
-                    <select class="maturity-select" name="q32" required>
+                    <select class="maturity-select" name="q32">
                         <option value="">-- Select Maturity Level --</option>
                         <option value="0">Not Implemented</option>
                         <option value="1">Partially Implemented</option>
@@ -757,7 +783,7 @@
                 
                 <div class="question">
                     <div class="question-text">9.1 Do you assess information security risks when engaging suppliers or third parties?</div>
-                    <select class="maturity-select" name="q33" required>
+                    <select class="maturity-select" name="q33">
                         <option value="">-- Select Maturity Level --</option>
                         <option value="0">Not Implemented</option>
                         <option value="1">Partially Implemented</option>
@@ -769,7 +795,7 @@
 
                 <div class="question">
                     <div class="question-text">9.2 Do your supplier agreements include information security requirements?</div>
-                    <select class="maturity-select" name="q34" required>
+                    <select class="maturity-select" name="q34">
                         <option value="">-- Select Maturity Level --</option>
                         <option value="0">Not Implemented</option>
                         <option value="1">Partially Implemented</option>
@@ -781,7 +807,7 @@
 
                 <div class="question">
                     <div class="question-text">9.3 Do you monitor and review third-party security practices regularly?</div>
-                    <select class="maturity-select" name="q35" required>
+                    <select class="maturity-select" name="q35">
                         <option value="">-- Select Maturity Level --</option>
                         <option value="0">Not Implemented</option>
                         <option value="1">Partially Implemented</option>
@@ -798,7 +824,7 @@
                 
                 <div class="question">
                     <div class="question-text">10.1 Are you aware of and compliant with relevant legal and regulatory requirements?</div>
-                    <select class="maturity-select" name="q36" required>
+                    <select class="maturity-select" name="q36">
                         <option value="">-- Select Maturity Level --</option>
                         <option value="0">Not Implemented</option>
                         <option value="1">Partially Implemented</option>
@@ -810,7 +836,7 @@
 
                 <div class="question">
                     <div class="question-text">10.2 Do you conduct internal security audits or assessments regularly?</div>
-                    <select class="maturity-select" name="q37" required>
+                    <select class="maturity-select" name="q37">
                         <option value="">-- Select Maturity Level --</option>
                         <option value="0">Not Implemented</option>
                         <option value="1">Partially Implemented</option>
@@ -822,7 +848,7 @@
 
                 <div class="question">
                     <div class="question-text">10.3 Is there a management review process for information security performance?</div>
-                    <select class="maturity-select" name="q38" required>
+                    <select class="maturity-select" name="q38">
                         <option value="">-- Select Maturity Level --</option>
                         <option value="0">Not Implemented</option>
                         <option value="1">Partially Implemented</option>
@@ -834,7 +860,7 @@
 
                 <div class="question">
                     <div class="question-text">10.4 Do you have a process for continual improvement of security controls?</div>
-                    <select class="maturity-select" name="q39" required>
+                    <select class="maturity-select" name="q39">
                         <option value="">-- Select Maturity Level --</option>
                         <option value="0">Not Implemented</option>
                         <option value="1">Partially Implemented</option>
@@ -863,49 +889,29 @@
                 <p style="margin-bottom: 20px; color: #666;">
                     When ready, save your completed assessment to your computer. You can then email it to your contact person.
                 </p>
-                <button type="submit" class="btn-submit">Save Assessment to Disk</button>
+                <button type="submit" class="btn-submit">💾 Save Assessment to Disk</button>
+                
+                <!-- Score Display -->
+                <div class="score-display" id="score-display" style="display: none;">
+                    <h3>Your Current Maturity Assessment</h3>
+                    <div class="score-value" id="score-value">-</div>
+                    <div class="score-level" id="score-level">Complete the assessment to see your score</div>
+                </div>
             </div>
         </form>
     </div>
 
     <script>
-        // Progress tracking
         const form = document.getElementById('assessment-form');
         const progressFill = document.getElementById('progress-fill');
         const progressText = document.getElementById('progress-text');
+        const scoreDisplay = document.getElementById('score-display');
+        const scoreValue = document.getElementById('score-value');
+        const scoreLevel = document.getElementById('score-level');
         
-        // Get all select elements for questions
         const totalQuestions = 39;
         
-        function updateProgress() {
-            let answeredQuestions = 0;
-            
-            for (let i = 1; i <= totalQuestions; i++) {
-                const select = document.querySelector(`select[name="q${i}"]`);
-                if (select && select.value !== '') {
-                    answeredQuestions++;
-                }
-            }
-            
-            const percentage = Math.round((answeredQuestions / totalQuestions) * 100);
-            progressFill.style.width = percentage + '%';
-            progressText.textContent = percentage + '%';
-        }
-        
-        // Add change listeners to all select elements
-        const allSelects = document.querySelectorAll('select.maturity-select');
-        allSelects.forEach(select => {
-            select.addEventListener('change', updateProgress);
-        });
-        
-        // Set today's date as default for assessment date
-        document.getElementById('assessment-date').valueAsDate = new Date();
-        
-        // Form submission - Save to disk with answers
-        form.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Calculate maturity score
+        function calculateScore() {
             let totalScore = 0;
             let scoredQuestions = 0;
             
@@ -930,54 +936,135 @@
                 maturityLevel = 'Optimized - Mature security practices';
             }
             
-            // Clone the current document
-            const htmlContent = document.documentElement.cloneNode(true);
+            return { averageScore, maturityLevel, scoredQuestions };
+        }
+        
+        function updateProgress() {
+            let answeredQuestions = 0;
             
-            // Update all form fields with current values in the cloned document
-            const formData = new FormData(form);
-            
-            // Set text inputs and textareas
-            for (let [name, value] of formData.entries()) {
-                const element = htmlContent.querySelector(`[name="${name}"]`);
-                if (element) {
-                    if (element.tagName === 'SELECT') {
-                        const option = element.querySelector(`option[value="${value}"]`);
-                        if (option) {
-                            option.setAttribute('selected', 'selected');
-                        }
-                    } else if (element.tagName === 'INPUT') {
-                        element.setAttribute('value', value);
-                    } else if (element.tagName === 'TEXTAREA') {
-                        element.textContent = value;
-                    }
+            for (let i = 1; i <= totalQuestions; i++) {
+                const select = document.querySelector(`select[name="q${i}"]`);
+                if (select && select.value !== '') {
+                    answeredQuestions++;
                 }
             }
             
-            // Add assessment results as a comment in the HTML
-            const resultsComment = htmlContent.createComment(
-                `\n  ASSESSMENT RESULTS:\n  Maturity Score: ${averageScore.toFixed(2)}/3.0\n  Maturity Level: ${maturityLevel}\n  Completed: ${new Date().toISOString()}\n  `
-            );
-            htmlContent.querySelector('head').appendChild(resultsComment);
+            const percentage = Math.round((answeredQuestions / totalQuestions) * 100);
+            progressFill.style.width = percentage + '%';
+            progressText.textContent = percentage + '%';
             
-            // Generate filename
-            const companyName = document.getElementById('company-name').value.replace(/[^a-z0-9]/gi, '-').toLowerCase();
-            const date = new Date().toISOString().split('T')[0];
-            const filename = `cybersecurity-assessment-${companyName}-${date}.html`;
+            // Update score display
+            const { averageScore, maturityLevel, scoredQuestions } = calculateScore();
             
-            // Create blob and download
-            const htmlString = '<!DOCTYPE html>\n' + htmlContent.outerHTML;
-            const blob = new Blob([htmlString], { type: 'text/html' });
-            const url = URL.createObjectURL(blob);
-            const link = document.createElement('a');
-            link.href = url;
-            link.download = filename;
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
-            URL.revokeObjectURL(url);
+            if (scoredQuestions > 0) {
+                scoreDisplay.style.display = 'block';
+                scoreValue.textContent = averageScore.toFixed(2) + ' / 3.0';
+                scoreLevel.textContent = maturityLevel;
+            } else {
+                scoreDisplay.style.display = 'none';
+            }
+        }
+        
+        // Add change listeners to all select elements
+        const allSelects = document.querySelectorAll('select.maturity-select');
+        allSelects.forEach(select => {
+            select.addEventListener('change', updateProgress);
+        });
+        
+        // Set today's date as default
+        document.getElementById('assessment-date').valueAsDate = new Date();
+        
+        // Form submission
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
             
-            // Show confirmation
-            alert(`Assessment Saved!\n\nMaturity Score: ${averageScore.toFixed(2)}/3.0\nMaturity Level: ${maturityLevel}\n\nFile saved as: ${filename}\n\nYou can now email this file to your contact person. The file can be reopened to review or modify your responses.`);
+            console.log('=== SAVE PROCESS STARTED ===');
+            
+            if (!form.checkValidity()) {
+                alert('Please complete all required company information fields.');
+                form.reportValidity();
+                return;
+            }
+            
+            console.log('✓ Form validation passed');
+            
+            const { averageScore, maturityLevel } = calculateScore();
+            
+            try {
+                const htmlContent = document.documentElement.cloneNode(true);
+                console.log('✓ Document cloned');
+                
+                const formData = new FormData(form);
+                console.log('✓ FormData created');
+                
+                // Update cloned document with values
+                for (let [name, value] of formData.entries()) {
+                    const element = htmlContent.querySelector(`[name="${name}"]`);
+                    if (element) {
+                        if (element.tagName === 'SELECT') {
+                            element.querySelectorAll('option').forEach(opt => {
+                                opt.removeAttribute('selected');
+                            });
+                            const option = element.querySelector(`option[value="${value}"]`);
+                            if (option) {
+                                option.setAttribute('selected', 'selected');
+                            }
+                        } else if (element.tagName === 'INPUT') {
+                            element.setAttribute('value', value);
+                        } else if (element.tagName === 'TEXTAREA') {
+                            element.textContent = value;
+                        }
+                    }
+                }
+                
+                console.log('✓ Form values updated');
+                
+                // Add score to the cloned document
+                const scoreDisplayClone = htmlContent.querySelector('#score-display');
+                if (scoreDisplayClone) {
+                    scoreDisplayClone.style.display = 'block';
+                    htmlContent.querySelector('#score-value').textContent = averageScore.toFixed(2) + ' / 3.0';
+                    htmlContent.querySelector('#score-level').textContent = maturityLevel;
+                }
+                
+                // Generate filename
+                const companyName = document.getElementById('company-name').value
+                    .replace(/[^a-z0-9]/gi, '-')
+                    .toLowerCase()
+                    .substring(0, 30);
+                const date = new Date().toISOString().split('T')[0];
+                const filename = `cybersecurity-assessment-${companyName}-${date}.html`;
+                
+                console.log('✓ Filename:', filename);
+                
+                // Create and download
+                const htmlString = '<!DOCTYPE html>\n' + htmlContent.outerHTML;
+                const blob = new Blob([htmlString], { type: 'text/html;charset=utf-8' });
+                const url = URL.createObjectURL(blob);
+                
+                console.log('✓ Blob created, size:', blob.size);
+                
+                const link = document.createElement('a');
+                link.href = url;
+                link.download = filename;
+                link.style.display = 'none';
+                document.body.appendChild(link);
+                
+                console.log('>>> TRIGGERING DOWNLOAD <<<');
+                link.click();
+                
+                setTimeout(() => {
+                    document.body.removeChild(link);
+                    URL.revokeObjectURL(url);
+                    console.log('✓ Cleanup complete');
+                }, 150);
+                
+                alert(`✅ Assessment Saved!\n\nMaturity Score: ${averageScore.toFixed(2)}/3.0\nLevel: ${maturityLevel}\n\nFile: ${filename}\n\n📁 Check your Downloads folder.\n\nYou can reopen this file to review or modify your responses before emailing.`);
+                
+            } catch (error) {
+                console.error('❌ ERROR:', error);
+                alert(`Error: ${error.message}\n\nCheck console (F12) for details.`);
+            }
         });
     </script>
 </body>
